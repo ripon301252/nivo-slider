@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: coral;
+}
+.full-wrapper{
+    width: 960px;
+    margin: 15px auto;
+}
+/* Header Part */
+.header{
+    background-color: teal;
+    padding: 15px;
+    border-bottom: 5px solid skyblue;
+}
+.header h2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header p{
+    color: orange;
+}
+
+/* Menu Part */
+.nav{
+    background-color: #4e4e4e;
+    height: 38px;
+    border-bottom: 5px solid skyblue;
+}
+.nav ul{
+    list-style-type: none; 
+    background-color: #4e4e4e;
+    
+}
+.nav ul li{   
+    float: left;
+    border-right: 1px solid #2a2b2b;
+    border-left: 1px solid #605b5b;
+    background-color: #4e4e4e; 
+    position: relative;
+}
+.nav ul li:last-child{
+    border-right: none;
+}
+.nav ul li:first-child{
+    border-left: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;   
+}
+.nav ul li a:hover{
+    background-color: skyblue;
+    color: black;
+}
+/* Dropdown menu */
+.nav ul li ul{
+    position: absolute;
+    left: -999999px;
+    
+}
+.nav ul li:hover ul{
+    left: 0;
+    width: 124px;    
+}
+.nav ul li ul li{
+    float: none;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #2a2b2b;
+    border-bottom: 1px solid #605b5b;
+    z-index: 10;
+}    
+.nav ul li ul li:last-child{
+    border-bottom: none;
+}
+/*Sub-Dropdown*/
+.nav ul li ul li ul{
+    top: -999999px;
+    position: absolute;   
+}
+.nav ul li ul li ul li{
+    width: 150px;
+}
+.nav ul li ul li ul li:first-child{
+    border-top: none;
+}
+
+
+.nav ul li ul li:hover ul{
+    top: 0px;
+    left: 124px;
+}
+
+/* Article*/
+.content-wrapper{
+    background-color: teal;
+    padding: 10px;
+    overflow: hidden;
+}
+.content{
+    width: 600px;   
+    float: left;
+    margin-right: 40px; 
+    margin-top: 20px;
+}
+.content h2{
+    color: orange;
+}
+.content h3{
+    margin-top: 20px;
+    color: orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.content p{
+    color: white;
+    margin-top: 10px;
+    text-align: justify;
+}
+blockquote{
+    background: black;
+    margin-left: 10px;
+    padding: 10px;  
+    border: 1.5px solid #ddd;     
+}
+.content img{
+    width: 450px;
+    margin-top: 15px ;   
+}
+.content figure{
+    width: 450px;
+    padding: 10px;
+    background: ivory;
+    margin: 5px auto;
+    display: block;
+}
+.content figcaption{
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+/*aside*/
+.sidebar{
+    width: 300px;
+    float: left;  
+    margin-top: 20px;     
+}
+
+.sidebar h2{
+    color: orange;
+}
+.sidebar ul{
+    list-style-type: circle;
+    color: white;
+}
+.sidebar ul li{
+    padding: 5px 0;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    background-color: violet;
+    padding: 10px;
+}
+.footer p{
+    text-align: center;
+}
+
+
